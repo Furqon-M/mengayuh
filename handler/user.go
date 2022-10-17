@@ -56,12 +56,6 @@ func (h *userHandler) RegisterUser(c *gin.Context) {
 }
 
 func (h *userHandler) Login(c *gin.Context) {
-	//user memasukan input (eamil & password)
-	//input ditangkap handler
-	//mapping dari input user ke input struct
-	//input struct passing service
-	//di service mencari dgn bantuan repository user dengan email x
-	// mencocokan password
 
 	var input user.LoginInput
 
