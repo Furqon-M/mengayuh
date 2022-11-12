@@ -1,14 +1,18 @@
 package transaction
 
-import "time"
+import (
+	"mengayuh/user"
+	"time"
+)
 
 type Transaction struct {
-	ID        int
-	Campaign  int
-	userID    int
-	Amount    int
-	Status    string
-	Code      string
-	CreatedAt time.Time
-	UpdatedAt time.Time
+	ID         int
+	CampaignID int
+	UserID     int
+	Amount     int
+	Status     string
+	Code       string
+	User       user.User
+	CreatedAt  time.Time
+	UpdatedAt  time.Time
 }
